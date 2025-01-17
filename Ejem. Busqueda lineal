@@ -1,7 +1,1 @@
-for i to n:
-    
-           if arr[i]==key:
-    
-               return true
-    
-    return false
+
