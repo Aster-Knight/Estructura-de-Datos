@@ -16,7 +16,7 @@ class Stack:
 
     def pop(self) -> any:
         if self.top == -1:
-            print('Stack underflow')
+            print('Underflow')
             return None
         
         val = self.elements[self.top]
@@ -26,7 +26,6 @@ class Stack:
     
     def peek(self) -> any:
         if self.top == -1:
-            print('Stack underflow')
-            return None
+            return 'Stack underflow'
 
         return self.elements[self.top]
