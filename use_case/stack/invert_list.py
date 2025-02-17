@@ -18,6 +18,8 @@ def invert_list(op_list:list, verbose=False):
 
 
     # Llenar el stack con la lista original
+    if verbose:
+        print('\nPushing elements to stack...')
     for element in op_list:
         s.push(element)
 
