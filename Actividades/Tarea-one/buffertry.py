@@ -8,6 +8,7 @@ ANCHO = 256
 ALTO = 256
 NUM_FRAMES_DEFAULT = 30
 
+
 def crear_frame_bn(ancho, alto, frame_index):
     """
     Crea un frame en blanco y negro con un degradado que varía con el índice del frame.
