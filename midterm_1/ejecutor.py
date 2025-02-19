@@ -38,6 +38,16 @@ class Stack:
             return None
 
         return self.elements[self.top]
+    
+    def search(self, key: str) -> int | None:
+        """
+        Busca la posición de la clave (key) en la pila.
+        Retorna la distancia desde la cima (0 si está en la cima) o None si no se encuentra.
+        """
+        for i in range(self.top, -1, -1):  # Itera desde la cima hacia la base
+            if self.elements[i] == key:
+                return self.top - i  # Calcula la distancia desde la cima
+        return None  # Retorna None si no se encuentra la clave
 
 def llenar_stack_con_ceros(stack):
     """
