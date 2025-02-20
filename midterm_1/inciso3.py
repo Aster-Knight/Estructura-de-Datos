@@ -1,7 +1,4 @@
-'''
-Inciso 2, encontrar con la estructura selecciónada un n que que intancie e inserte elementos. De tal manera que alcance un tiempo de ejecución de 5 segundos.
-'''
-
+# inciso 1, selecciónar una clase que hayamos trabajado en clase para el ejercicio
 
 import time
 import cProfile
@@ -39,15 +36,7 @@ class Stack:
 
         return self.elements[self.top]
     
-    def search(self, key: str) -> int | None:
-        """
-        Busca la posición de la clave (key) en la pila.
-        Retorna la distancia desde la cima (0 si está en la cima) o None si no se encuentra.
-        """
-        for i in range(self.top, -1, -1):  # Itera desde la cima hacia la base
-            if self.elements[i] == key:
-                return self.top - i  # Calcula la distancia desde la cima
-        return None  # Retorna None si no se encuentra la clave
+
 
 def llenar_stack_con_ceros(stack):
     """
@@ -67,13 +56,11 @@ def medir_tiempo_ejecucion(n_try):
     fin = time.time()
     tiempo_ejecucion = fin - inicio
 
-    print(f"n_try = {n_try}, Tiempo de ejecución: {tiempo_ejecucion:.4f} segundos")
-
     return tiempo_ejecucion
 
 if __name__ == "__main__":
     def main():
-        n_try = 10999590*2  # Define el valor de n_try aquí
+        n_try = 5999590  # Define el valor de n
 
         n1=1*n_try
         n2=2*n_try
@@ -90,6 +77,8 @@ if __name__ == "__main__":
         print(f"\nTiempo de ejecución total 4 con n_try = {n4}: {prueba4:.4f} segundos")
         prueba5 = medir_tiempo_ejecucion(n5)
         print(f"\nTiempo de ejecución total 5 con n_try = {n5}: {prueba5:.4f} segundos")
+
+
 
 
     cProfile.run('main()')
