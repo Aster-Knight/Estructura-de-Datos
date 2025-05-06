@@ -1,0 +1,11 @@
+# requirements.txt
+# Este archivo lista las bibliotecas externas requeridas para los proyectos desarrollados.
+
+# Requerido para la comparación de complejidad de BST y AVL (gráficas, análisis numérico)
+matplotlib
+numpy
+seaborn
+pandas
+
+# Nota: Las siguientes bibliotecas son parte de la biblioteca estándar de Python y no necesitan
+# ser instaladas por separado (os, sys, stat, datetime, pathlib, argparse, shlex, re, time).
